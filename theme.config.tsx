@@ -9,7 +9,7 @@ const config: DocsThemeConfig = {
   chat: {
     link: 'https://discord.gg/f6TUahfpdJ',
   },
-  docsRepositoryBase: 'https://github.com/phocks/nextra-personal-docs',
+  docsRepositoryBase: 'https://github.com/phocks/nextra-personal-docs/tree/main/',
   footer: {
     text: 'a byrd house joint',
   },
