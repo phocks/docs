@@ -4,7 +4,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 const config: DocsThemeConfig = {
   logo: <span>phocks docs</span>,
   project: {
-    link: 'https://github.com/phocks/nextra-personal-docs',
+    link: 'https://github.com/phocks',
   },
   chat: {
     link: 'https://discord.gg/f6TUahfpdJ',
