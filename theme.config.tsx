@@ -6,9 +6,9 @@ const config: DocsThemeConfig = {
   project: {
     link: 'https://github.com/phocks',
   },
-  chat: {
-    link: 'https://discord.gg/f6TUahfpdJ',
-  },
+  // chat: {
+  //   link: 'https://discord.gg/f6TUahfpdJ',
+  // },
   docsRepositoryBase: 'https://github.com/phocks/docs/tree/main/',
   footer: {
     text: 'a byrd house joint',

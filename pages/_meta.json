@@ -1,10 +1,6 @@
 {
   "index": "Introduction",
   "blog": "Blog",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
   "contact": {
     "title": "Social ↗",
     "type": "page",
