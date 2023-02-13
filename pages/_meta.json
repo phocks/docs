@@ -1,8 +1,5 @@
 {
   "index": "Introduction",
-  "---": {
-    "type": "separator"
-  },
   "blog": "Blog",
   "contact": {
     "title": "Contact",
