@@ -2,6 +2,10 @@
   "index": "Introduction",
   "blog": "Blog",
   "contact": {
+    "title": "Contact",
+    "type": "page"
+  },
+  "social": {
     "title": "Fedi ↗",
     "type": "page",
     "href": "https://bne.social/@phocks",
