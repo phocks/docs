@@ -13,6 +13,10 @@ const config: DocsThemeConfig = {
   footer: {
     text: `© Joshua Byrd. ${new Date().getFullYear()}.`,
   },
+  primaryHue: { dark: 160, light: 160 },
+  nextThemes: {
+    defaultTheme: "dark",
+  },
 };
 
 export default config;
