@@ -11,7 +11,7 @@ const config: DocsThemeConfig = {
   // },
   docsRepositoryBase: "https://github.com/phocks/docs/tree/main/",
   footer: {
-    text: `© Joshua Byrd. ${new Date().getFullYear()}.`,
+    text: `© Joshua Byrd. ${new Date().getFullYear()}`,
   },
   primaryHue: { dark: 160, light: 160 },
   nextThemes: {
