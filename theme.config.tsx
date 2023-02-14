@@ -15,10 +15,8 @@ const config: DocsThemeConfig = {
     defaultTheme: "dark",
   },
   banner: {
-    key: '2.0-release',
-    text: <a href="https://nextra.site" target="_blank">
-      🎉 Nextra 2.0 is released. Read more →
-    </a>,
+    key: 'docs-launched',
+    text: <span>We are so glad you're alive...</span>,
   },
 };
 
