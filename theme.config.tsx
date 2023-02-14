@@ -3,6 +3,11 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
   logo: <span>(╥﹏╥)</span>,
+  useNextSeoProps() {
+    return {
+      titleTemplate: "%s :::: a phocks joint",
+    };
+  },
   project: {
     link: "https://github.com/phocks",
   },
@@ -15,8 +20,8 @@ const config: DocsThemeConfig = {
     defaultTheme: "dark",
   },
   banner: {
-    key: 'docs-launched',
-    text: <span>We are so glad you're alive...</span>,
+    key: 'so-glad',
+    text: <span>We are so glad you're here, alive and well...</span>,
   },
 };
 
