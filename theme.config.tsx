@@ -19,10 +19,10 @@ const config: DocsThemeConfig = {
   nextThemes: {
     defaultTheme: "dark",
   },
-  banner: {
-    key: 'so-glad',
-    text: <span>We are so glad you're here, alive and well...</span>,
-  },
+  // banner: {
+  //   key: 'so-glad',
+  //   text: <span>We are so glad you're here, alive and well...</span>,
+  // },
 };
 
 export default config;
