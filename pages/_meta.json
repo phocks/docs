@@ -1,5 +1,9 @@
 {
   "index": "Introduction",
+  "some-links": "Some Links",
+  "More": {
+    "type": "separator"
+  },
   "blog": "Blog",
   "contact": {
     "title": "Contact",

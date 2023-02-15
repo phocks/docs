@@ -13,7 +13,15 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: "https://github.com/phocks/docs/tree/main/",
   footer: {
-    text: `© Joshua Byrd. ${new Date().getFullYear()}`,
+    text: (
+      <span>
+        © Joshua Byrd. {new Date().getFullYear()} on{" "}
+        <a href="https://nextra.site" target="_blank">
+          Nextra
+        </a>
+        .
+      </span>
+    ),
   },
   primaryHue: { dark: 202, light: 202 },
   nextThemes: {
