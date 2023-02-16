@@ -17,11 +17,12 @@ This code toots a toot:
 
 ```javascript
 const masto = new Masto({
-        access_token: "access_token_here",
-        api_url: "https://bne.social/api/v1/"
-    });
+  access_token: "access_token_here",
+  api_url: "https://bne.social/api/v1/",
+});
 
 const response = await masto.post("statuses", {
-    status: "Hello this is just a test!"
+  status: "Hello this is just a test!",
 });
+
 ```
