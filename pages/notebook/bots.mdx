@@ -16,13 +16,26 @@ What do we need?
 This code toots a toot:
 
 ```javascript
-const masto = new Masto({
-  access_token: "access_token_here",
-  api_url: "https://bne.social/api/v1/",
-});
+import { serve } from "https://deno.land/std@0.155.0/http/server.ts";
+import Masto from "https://esm.sh/mastodon@1.2.2";
 
-const response = await masto.post("statuses", {
-  status: "Hello this is just a test!",
+serve(async () => {
+  const masto = new Masto({
+    access_token: "access_token_here",
+    api_url: "https://bne.social/api/v1/",
+  });
+
+  const response = await masto.post("statuses", {
+    status: "Hello this is just a test!",
+    visibility: "unlisted",
+  });
+
+  return Response.json({ response });
 });
 
 ```
+
+For automation:
+
+1. A web pinging service https://uptimerobot.com
+2. Your Deno Deploy endpoint https://.deno.dev
