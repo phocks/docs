@@ -1,0 +1,27 @@
+# Bots
+
+Some info on botmaking.
+
+## Let's make a (very simple) Mastodon bot
+
+What do we need?
+
+1. Masdodon account https://bne.social
+2. Deno Deploy account https://dash.deno.com
+3. Mastodon "App" https://bne.social/settings/applications
+4. App access token
+5. JavaScript Mastodon library https://esm.sh/mastodon
+6. API enpoint https://bne.social/api/v1/
+
+This code toots a toot:
+
+```javascript
+const masto = new Masto({
+        access_token: "access_token_here",
+        api_url: "https://bne.social/api/v1/"
+    });
+
+const response = await masto.post("statuses", {
+    status: "Hello this is just a test!"
+});
+```
