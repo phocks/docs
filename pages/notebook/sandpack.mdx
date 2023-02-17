@@ -9,6 +9,79 @@ Here I'm just testing out [Sandpack](https://sandpack.codesandbox.io/). Below sh
 
 <Sandpack
   theme={gruvboxDark}
-  template="nextjs"
-  options={{ editorHeight: "400px" }}
+  template="react"
+  options={{ editorHeight: "600px" }}
+  customSetup={{ 
+        dependencies: { 
+          "@react-three/drei": "9.36.0",
+    "@react-three/fiber": "8.8.10",
+    "@react-three/postprocessing": "2.7.0",
+    "@react-three/rapier": "0.8.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-scripts": "5.0.1",
+    "three": "0.145.0"
+        }
+      }}
+  files={{
+        "/App.js": `import React, { useRef, useState } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+
+function Box(props) {
+  // This reference will give us direct access to the mesh
+  const mesh = useRef();
+  // Set up state for the hovered and active state
+  const [hovered, setHover] = useState(false);
+  const [active, setActive] = useState(false);
+  // Subscribe this component to the render-loop, rotate the mesh every frame
+  useFrame((state, delta) => (mesh.current.rotation.x += delta));
+  // Return view, these are regular three.js elements expressed in JSX
+  return (
+    <mesh
+      {...props}
+      ref={mesh}
+      scale={active ? 1.5 : 1}
+      onClick={(event) => setActive(!active)}
+      onPointerOver={(event) => setHover(true)}
+      onPointerOut={(event) => setHover(false)}
+    >
+      <boxGeometry args={[1, 1, 1]} />
+      <meshStandardMaterial color={hovered ? "hotpink" : "orange"} />
+    </mesh>
+  );
+}
+
+function App() {
+  return (
+    <div id="canvas-container">
+      <Canvas>
+        <ambientLight />
+        <pointLight position={[10, 10, 10]} />
+        <Box position={[-1.2, 0, 0]} />
+        <Box position={[1.2, 0, 0]} />
+      </Canvas>
+    </div>
+  );
+}
+
+export default App;
+`,
+"/styles.css": `body {
+  font-family: sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: auto;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  background-color: darkslategray;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+`
+}}
 />
