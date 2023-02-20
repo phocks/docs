@@ -5,7 +5,7 @@ const config: DocsThemeConfig = {
   logo: <span>(╥﹏╥)</span>,
   useNextSeoProps() {
     return {
-      titleTemplate: "%s :::: a phocks joint",
+      titleTemplate: "%s :::: ~~phocks~~",
     };
   },
   project: {
