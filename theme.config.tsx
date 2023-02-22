@@ -8,7 +8,7 @@ const config: DocsThemeConfig = {
   },
   useNextSeoProps() {
     return {
-      titleTemplate: "%s :::: a phocks joint",
+      titleTemplate: "%s :::: ~~phocks~~",
     };
   },
   project: {
