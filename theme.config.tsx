@@ -3,6 +3,9 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
   logo: <span>(╥﹏╥)</span>,
+  sidebar: {
+    defaultMenuCollapseLevel: 0,
+  },
   useNextSeoProps() {
     return {
       titleTemplate: "%s :::: a phocks joint",

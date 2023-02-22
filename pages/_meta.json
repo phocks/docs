@@ -1,11 +1,5 @@
 {
   "index": "Introduction",
-  "some-links": "Some Links",
-  "notebook": "Notebook",
-  "More": {
-    "type": "separator"
-  },
-  "blog": "Blog",
   "contact": {
     "title": "Contact",
     "type": "page"
