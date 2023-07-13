@@ -28,7 +28,7 @@ const config: DocsThemeConfig = {
   },
   primaryHue: { dark: 202, light: 202 },
   nextThemes: {
-    defaultTheme: "dark",
+    defaultTheme: "system",
   },
   // banner: {
   //   key: 'so-glad',
