@@ -1,3 +1,11 @@
+Set up an NGINX reverse proxy host
+
+We are in Alpine Linux, a container. Assume we have port forwarding set up on our IP address to our container and the domain DNS pointing to our IP address.
+
+In `/etc/nginx/http.d/`
+
+Create a file with:
+
 ```
 server {
     listen 80;
@@ -11,3 +19,11 @@ server {
     }
 }
 ```
+
+Replacing your domain and the app server address (including https etc).
+
+Try a `rc-service nginx restart`.
+
+Try getting a certificate with `certbot --nginx`
+
+It should work, and certbot should hopefully have updated your `.conf` file.
